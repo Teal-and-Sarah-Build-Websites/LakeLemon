@@ -1,9 +1,9 @@
 ---
-visible: false
+visible: true
 content:
     items: '@self.children'
 background: 'center'
 image:
-    title: 
+    title:
     meta:
 ---

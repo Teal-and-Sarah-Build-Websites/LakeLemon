@@ -1,5 +1,6 @@
 ---
 title: Why Daniel Bingham is Running
+visible: true
 image:
     title: Daniel Bingham
     alt: Daniel Bingham

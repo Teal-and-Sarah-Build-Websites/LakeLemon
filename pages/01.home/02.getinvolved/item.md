@@ -1,5 +1,6 @@
 ---
 title: 'How can I get involved?'
+visible: true
 ---
 We're still working on getting campaign infrastructure in place.  In the mean time, if you want to get ahold of us to find out how to get involved you can reach out to us at [danielbinghamforbloomington@gmail.com](mailto:danielbinghamforbloomington@gmail.com) You can also follow along on our [Facebook](https://www.facebook.com/danielbinghamforbloomington/?ref=br_rs) page!  At this point in the campaign, our main challenge is just getting on people's radar. So liking and sharing the page and its posts is a huge help.  Also spreading the word about us, especially to folks you know in District 2.
 
