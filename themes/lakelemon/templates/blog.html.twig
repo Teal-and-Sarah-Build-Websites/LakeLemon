@@ -1,0 +1,15 @@
+{% extends 'partials/base.html.twig' %}
+
+{% block content %}
+{% for image in page.media.images %}
+    <div class="header-image" style="background-image: url('{{image.url}}'); background-position: {{page.header.background}};">
+        <h1> We have to do more.</h1>
+    </div>
+{% endfor %}
+
+{% set collection = page.collection() %}
+
+    {% for child in collection %}
+        {% include 'partials/blog_item.html.twig' with {'blog':page, 'page':child, 'truncate':true} %}
+    {% endfor %}
+{% endblock %}

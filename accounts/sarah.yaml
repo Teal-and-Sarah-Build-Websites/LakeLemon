@@ -1,0 +1,11 @@
+email: sera.baghdadi@gmail.com
+fullname: 'Sarah Baghdadi'
+title: Administrator
+state: enabled
+access:
+  admin:
+    login: true
+    super: true
+  site:
+    login: true
+hashed_password: $2y$10$bJYUkxFoOA30k7z1F0LJEO1Jc3SzK9gXS6F0Sw2NtYyYSKzWySCK2
