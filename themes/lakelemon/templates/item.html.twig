@@ -5,9 +5,11 @@
     {{ page.title }}
 </h2>
 <div class="item-image">
-    {% for image in page.media.images %}
-        {{ image.cropZoom(600,600).html(page.header.image.title, page.header.image.alt, 'uk-align-left uk-margin-remove-adjacent') }}
-    {% endfor %}
+      {% for image in page.media.images %}
+
+          {{ image.cropZoom(600,600).html(page.header.image.title, page.header.image.alt, 'uk-align-left uk-margin-remove-adjacent') }}
+
+      {% endfor %}
 </div>
 {{ page.content }}
 </div>

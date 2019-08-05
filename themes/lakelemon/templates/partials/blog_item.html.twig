@@ -11,9 +11,21 @@
 {% else %}
 <div class="uk-grid article">
     <div class="uk-width-1-3 uk-visible@m">
+    <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow>
+
+        <ul class="uk-slideshow-items">
         {% for image in page.media.images %}
-            {{ image.cropZoom(600,600).html(page.header.image.title, page.header.image.alt) }}
-        {% endfor %}
+            <li>
+              {{ image.html(page.header.image.title, page.header.image.alt) }}
+            </li>
+          {% endfor %}
+          </ul>
+
+          <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+          <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+
+      </div>
+
     </div>
     <div class="uk-width-2-3@m uk-width-1-1@m">
         <h2 class="uk-text-center uk-text-left@m">
