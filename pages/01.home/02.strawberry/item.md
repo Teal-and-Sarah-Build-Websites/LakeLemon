@@ -1,8 +1,8 @@
 ---
-title: 'Strawberry Feilds'
+title: 'Strawberry Fields'
 image:
-    title: Strawberry Feilds Guest House
-    alt: Strawberry Feilds Guest House, rear view
+    title: Strawberry Fields Guest House
+    alt: Strawberry Fields Guest House, rear view
 ---
 Relive the groovy 60's in our popular Strawberry Fields lake house. Nestled in the Monroe/Brown County hills on beautiful Lake Lemon, Strawberry Fields is chock full of 60's memorabilia and Beatles' tributes, and has served as Family Fun Central for scores of vacationing families since the 1960's.
 
