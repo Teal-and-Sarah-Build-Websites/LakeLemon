@@ -118,6 +118,13 @@ footer small {
     p {
         word-break: break-word;
     }
+    .column {
+        flex-direction: column;
+    }
+
+    .last {
+        order: 3;
+    }
 }
 
 .description p, .description li {
