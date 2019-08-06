@@ -60,29 +60,7 @@
 {% endblock %}
 
 {% block footer %}
-    <footer>
-        <div class="uk-flex uk-flex-around uk-visible@m">
-            <div class="uk-text-center">
-                <span class="uk-text-lead">Lake Lemon Guest Houses</span>
-                <small>Come to the Lake.</small>
-            </div>
-            <div class="uk-text-center">
-                <div class="uk-text-lead">
-                    <a href="https://www.facebook.com/Lake-Lemon-Guest-Houses-114437381968688/" uk-icon="icon: facebook" class="uk-link"></a>
-                </div>
-                <a href="mailto:campaignemail@campaign.com">
-                    <span uk-icon="icon: mail"></span> suragail@gmail.com
-                </a>
-            </div>
-        </div>
-        <div class="uk-hidden@m">
-            <div class="uk-text-center">
-                <span class="uk-text-lead">Lake Lemon Guest Houses</span>
-                <small style="padding-bottom: 1rem;">Come to the Lake.</small>
-                <a href="https://www.facebook.com/Lake-Lemon-Guest-Houses-114437381968688/" uk-icon="icon: facebook" class="uk-link"></a>
-            </div>
-        </div>
-    </footer>
+    {% include 'partials/footer.html.twig' %}
 {% endblock %}
 
 {% block bottom %}
