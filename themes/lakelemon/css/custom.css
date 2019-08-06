@@ -1,9 +1,21 @@
+body {
+ font-family: 'Chivo', sans-serif;
+ font-weight: 300;
+}
+
+h1, h2, h3, h4, h5, h6, #logo {
+ font-family: 'Playfair Display', serif;
+ font-weight: 700;
+ font-style: italic;
+}
+
 nav { padding: 0 40px;}
 
 #logo {
     flex-direction: column;
     align-items: flex-start;
-    font-family: 'Merriweather', serif;
+    /*font-family: 'Merriweather', serif;*/
+    text-transform: none;
 }
 
 .uk-navbar-nav>li>a {
@@ -34,9 +46,9 @@ nav { padding: 0 40px;}
     }
 }
 
-h1, h2, h3, h4, h5, h6 {
+/*h1, h2, h3, h4, h5, h6 {
     font-family: 'Merriweather', serif;
-}
+}*/
 
 h1 {
     text-align: center;
@@ -50,7 +62,7 @@ h1 {
 }
 
 .header-image {
-    height: 300px;
+    height: 400px;
     overflow: hidden;
     background-size: cover;
 }
@@ -72,7 +84,7 @@ h1 {
 
 @media (max-width: 450px) {
     iframe {
-        padding: 0 0 20px 0; 
+        padding: 0 0 20px 0;
     }
 }
 
@@ -84,19 +96,8 @@ iframe {
     text-align: center;
 }
 
-.item-image {
-    max-width: 30vw;
-}
-
-.mobile-image {
-    text-align: center;
-}
-
-@media (min-width: 400px) {
-    .mobile-image {
-        float: left;
-        padding: 20px;
-    }
+.item-images img {
+    max-width: 20vw;
 }
 
 footer {
@@ -117,4 +118,16 @@ footer small {
     p {
         word-break: break-word;
     }
+    .column {
+        flex-direction: column;
+    }
+
+    .last {
+        order: 3;
+    }
+}
+
+.description p, .description li {
+    font-size: 18px;
+    color: black;
 }

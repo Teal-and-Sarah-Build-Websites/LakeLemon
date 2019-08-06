@@ -11,6 +11,7 @@
 
     <link rel="icon" type="image/png" href="{{ url('theme://images/logo.png') }}" />
     <link rel="canonical" href="{{ page.url(true, true) }}" />
+    <link href="https://fonts.googleapis.com/css?family=Chivo:300,700|Playfair+Display:700i" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
     <meta charset="utf-8" />
     {% block stylesheets %}
@@ -59,6 +60,7 @@
 {% endblock %}
 
 {% block footer %}
+<<<<<<< HEAD
     <footer>
         <div class="uk-flex uk-flex-around uk-visible@m">
             <div class="uk-text-center">
@@ -79,6 +81,25 @@
                 <span class="uk-text-lead">Lake Lemon Guest Houses</span>
                 <small style="padding-bottom: 1rem;">Come to the Lake.</small>
                 <a href="https://www.facebook.com/Lake-Lemon-Guest-Houses-114437381968688/" uk-icon="icon: facebook" class="uk-link"></a>
+=======
+    <footer class="uk-background-muted uk-padding">
+        <div class="uk-text-center uk-text-lead uk-margin-large-bottom">
+            Discover why we're Indiana's best family vacation destination.
+        </div>
+        <div class="uk-text-center uk-flex column" uk-grid>
+            <div class="uk-text-center uk-width-expand">
+                Lake Lemon Guest Houses
+                <small>8920 Southshore Drive, Unionville, IN 47468</small>
+            </div>
+            <div class="uk-text-lead uk-width-auto last">
+                <a href="{{site.facebook}}" uk-icon="icon: facebook" class="uk-icon-button"></a>
+            </div>
+            <div class="uk-text-center uk-width-expand">
+                <a href="mailto:{{site.email}}">
+                    <span uk-icon="icon: mail"></span> {{site.email}}
+                </a>
+                <div><span uk-icon="icon: phone"></span> {{site.phone}}</div>
+>>>>>>> 32236e08dad88d69fc268c2e3f80c06b839ba3d1
             </div>
         </div>
     </footer>
