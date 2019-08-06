@@ -25,7 +25,8 @@
           <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
 
       </div>
-
+      {# attempted to add a dot nav, to make it more clear that there are more images, but it didn't work
+      <ul class="uk-slideshow-nav uk-dotnav uk-flex-center uk-margin"></ul> #}
     </div>
     <div class="uk-width-1-2@m uk-width-1-1@m">
         <h2 class="uk-text-center uk-text-left@m">
@@ -39,7 +40,7 @@
         </div>
        {{ page.summary }}
        {% if page.summary < page.content %}
-            <a href="{{ page.url }}">More information</a>
+            <a href="{{ page.url }}">More information on {{page.title}}...</a>
         {% endif %}
     </div>
 </div>
