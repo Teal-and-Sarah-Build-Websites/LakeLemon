@@ -100,17 +100,6 @@ iframe {
     max-width: 20vw;
 }
 
-.mobile-image {
-    text-align: center;
-}
-
-@media (min-width: 400px) {
-    .mobile-image {
-        float: left;
-        padding: 20px;
-    }
-}
-
 footer {
     padding: 40px 0;
 }
