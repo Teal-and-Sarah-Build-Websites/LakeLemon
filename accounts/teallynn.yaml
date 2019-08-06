@@ -1,0 +1,11 @@
+state: enabled
+email: teallynnlar@gmail.com
+access:
+  admin:
+    login: true
+    super: true
+  site:
+    login: true
+fullname: 'Teal Bingham'
+title: Admin
+hashed_password: $2y$10$KA9uoko0G9ipkH1p6gJY4uCe/XGInHEiFZEp3ddIAN1r9yEMt0SMa
