@@ -96,8 +96,8 @@ iframe {
     text-align: center;
 }
 
-.item-image {
-    max-width: 30vw;
+.item-images img {
+    max-width: 20vw;
 }
 
 .mobile-image {
@@ -129,4 +129,9 @@ footer small {
     p {
         word-break: break-word;
     }
+}
+
+.description p, .description li {
+    font-size: 18px;
+    color: black;
 }
