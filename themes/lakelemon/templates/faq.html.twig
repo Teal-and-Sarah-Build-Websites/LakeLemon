@@ -8,8 +8,9 @@
 {% endfor %}
 
 {% set collection = page.collection() %}
-
+<div class="uk-container-small uk-align-center">
     {% for child in collection %}
         {% include 'partials/faq_item.html.twig' with {'blog':page, 'page':child, 'truncate':true} %}
     {% endfor %}
+</div>
 {% endblock %}
