@@ -9,21 +9,29 @@ h1, h2, h3, h4, h5, h6, #logo {
  font-style: italic;
 }
 
+body.colorful-body h2, body.colorful-body h3 {
+    color: #FFC107;
+}
+
 nav { padding: 0 40px;}
+
+.uk-navbar-container.colorful-nav {
+    background: #607D8B;
+}
 
 #logo {
     flex-direction: column;
     align-items: flex-start;
-    /*font-family: 'Merriweather', serif;*/
     text-transform: none;
+    font-size: 1.5rem;
 }
 
-.uk-navbar-nav>li>a {
-    color: #525151;
+.colorful-nav .uk-navbar-nav>li>a, .colorful-nav .uk-iconnav>*>a {
+    color: #e2dddd;;
 }
 
-.uk-navbar-nav>li:hover>a, .uk-navbar-nav>li>a.uk-open, .uk-navbar-nav>li>a:focus, .uk-iconnav>*>a:focus, .uk-iconnav>*>a:hover, #logo:hover .uk-text-lead {
-    color: #006dc4;
+.colorful-nav .uk-navbar-nav>li:hover>a, .colorful-nav .uk-navbar-nav>li>a.uk-open,.colorful-nav .uk-navbar-nav>li>a:focus, .colorful-nav .uk-iconnav>*>a:focus, .colorful-nav .uk-iconnav>*>a:hover, .colorful-nav #logo:hover {
+    color: white;
 }
 
 [class*=uk-navbar-dropdown-bottom] {
@@ -59,7 +67,7 @@ nav { padding: 0 40px;}
 }
 
 @media (max-width: 413px)  {
-    nav .uk-text-lead {
+    nav #logo {
         font-size: 1rem;
     }
 }
@@ -69,10 +77,6 @@ nav { padding: 0 40px;}
         display: none;
     }
 }
-
-/*h1, h2, h3, h4, h5, h6 {
-    font-family: 'Merriweather', serif;
-}*/
 
 h1 {
     text-align: center;
