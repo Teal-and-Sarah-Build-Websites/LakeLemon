@@ -1,7 +1,6 @@
 title: Lake Lemon Guest Houses
 author:
-  name: Sarah Baghdadi and Teal Bingham
-  email: 'joe@example.com'
+    name: Sarah Baghdadi and Teal Bingham
 metadata:
     description: 'Lake Lemon Guest Houses - Vacation Rentals in Indiana'
 summary:
@@ -9,3 +8,4 @@ summary:
 facebook: 'https://www.facebook.com/Lake-Lemon-Guest-Houses-114437381968688/'
 email: 'suragail@gmail.com'
 phone: '812-322-2436'
+moto: 'Come to the lake.'
