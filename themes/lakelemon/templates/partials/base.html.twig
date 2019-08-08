@@ -29,17 +29,17 @@
 
 {% endblock head%}
 </head>
-<body id="top" class="{{ page.header.body_classes }}">
+<body id="top" class="colorful-body {{ page.header.body_classes }}">
 
 {% block header %}
     <div class="header">
         {% block header_navigation %}
-        <nav class="uk-navbar-container" uk-navbar="mode: click">
+        <nav class="uk-navbar-container colorful-nav" uk-navbar="mode: click">
             <div class="uk-navbar-left">
                 <ul class="uk-navbar-nav">
                     <li class="">
                         <a href="{{ base_url == '' ? '/' : base_url }}" id="logo">
-                            <span class="uk-text-lead">Lake Lemon Guest Houses</span>
+                            Lake Lemon Guest Houses
                         </a>
                     </li>
                 </ul>
