@@ -13,7 +13,7 @@
     <div class="uk-width-1-2 uk-visible@s">
         <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow>
             <ul class="uk-slideshow-items">
-            {% for image in page.media.images %}
+            {% for image in page.media.images|slice(0,4) %}
                 <li>
                   {{ image.html(page.header.image.title, page.header.image.alt) }}
                 </li>
@@ -33,9 +33,9 @@
         <div class="uk-hidden@s">
             <div class="uk-position-relative uk-visible-toggle uk-dark" tabindex="-1" uk-slideshow>
                 <ul class="uk-slideshow-items">
-                    {% for image in page.media.images %}
+                    {% for image in page.media.images|slice(0,4) %}
                         <li style="text-align:center;">
-                            {{ image.cropZoom(250,250).html(page.header.image.title, page.header.image.alt) }}
+                            {{ image.html(page.header.image.title, page.header.image.alt) }}
                         </li>
                     {% endfor %}
                 </ul>

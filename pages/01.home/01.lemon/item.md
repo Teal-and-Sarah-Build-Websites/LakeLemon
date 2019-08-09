@@ -2,7 +2,7 @@
 title: Lemon Lift
 image:
     title: Lemon Lift Guest House
-    alt: Lemon Lift Guest House, side view
+    alt: Lemon Lift Guest House
 ---
 Want a vacation with a twist? Check out this comfortable lakeside cottage on beautiful, secluded Lake Lemon. This quaint and relaxed family vacation property sleeps seven with a queen bed on the main floor, a queen-sized futon in the living room, and a walk out bedroom with a double and single bed downstairs.
 
