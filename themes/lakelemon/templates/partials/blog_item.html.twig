@@ -11,8 +11,8 @@
 {% else %}
 <div class="uk-grid article">
     <div class="uk-width-1-2 uk-visible@s">
-        <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow>
-            <ul class="uk-slideshow-items">
+        <div class="uk-position-relative uk-visible-toggle" tabindex="-1" uk-slideshow>
+            <ul class="uk-slideshow-items uk-light">
             {% for image in page.media.images|slice(0,4) %}
                 <li>
                   {{ image.html(page.header.image.title, page.header.image.alt) }}
@@ -21,9 +21,8 @@
               </ul>
               <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
               <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+              <ul class="uk-slideshow-nav uk-dotnav uk-flex-center uk-margin uk-dark"></ul>
          </div>
-      {# attempted to add a dot nav, to make it more clear that there are more images, but it didn't work
-      <ul class="uk-slideshow-nav uk-dotnav uk-flex-center uk-margin"></ul> #}
     </div>
     <div class="uk-width-1-2@s">
         <h2 class="uk-text-center uk-text-left@s">
