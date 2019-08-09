@@ -1,6 +1,7 @@
 ---
 title: A Page with an Example Form
 body_classes: uk-container-xsmall uk-align-center
+hero: true
 form:
     name: contact-form
     fields:

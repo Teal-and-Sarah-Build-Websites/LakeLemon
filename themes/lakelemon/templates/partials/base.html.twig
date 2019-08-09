@@ -53,6 +53,11 @@
 {% endblock %}
 
 {% block body %}
+
+{% if page.header.hero %}
+{% include 'partials/hero.html.twig'%}
+{% endif %}
+
     <section id="body" class="{{ page.header.body_classes }}">
         {% block content %}{% endblock %}
     </section>
