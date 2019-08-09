@@ -33,11 +33,11 @@
         <div class="uk-hidden@s">
             <div class="uk-position-relative uk-visible-toggle uk-dark" tabindex="-1" uk-slideshow>
                 <ul class="uk-slideshow-items">
-                    {% for image in page.media.images|slice(0,4) %}
-                        <li style="text-align:center;">
-                            {{ image.html(page.header.image.title, page.header.image.alt) }}
-                        </li>
-                    {% endfor %}
+                  {% for image in page.media.images|slice(0,4) %}
+                      <li style="text-align:center;">
+                          {{ image.html(page.header.image.title, page.header.image.alt) }}
+                      </li>
+                  {% endfor %}
                 </ul>
                 <a class="uk-position-center-left uk-position-small" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
                 <a class="uk-position-center-right uk-position-small" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
