@@ -29,7 +29,7 @@
 
 {% endblock head%}
 </head>
-<body id="top" class="colorful-body {{ page.header.body_classes }}">
+<body id="top" class="colorful-body">
 
 {% block header %}
     <div class="header">
@@ -53,7 +53,7 @@
 {% endblock %}
 
 {% block body %}
-    <section id="body">
+    <section id="body" class="{{ page.header.body_classes }}">
         {% block content %}{% endblock %}
     </section>
 {% endblock %}
