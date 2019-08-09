@@ -131,10 +131,6 @@ footer {
     padding: 40px 0;
 }
 
-footer small {
-    display: block;
-}
-
 @media (max-width: 620px) {
     footer .uk-text-lead {
         font-size: 1rem;
