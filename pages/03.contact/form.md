@@ -94,7 +94,8 @@ form:
             to:
               - "{{ config.plugins.email.to }}"
               - "{{ form.value.email }}"
-            subject: "[Site contact] {{ form.value.name|e }}"
+            reply_to: “{{ form.value.email }}”
+            subject: "[Web contact] {{ form.value.name|e }}"
             body: "{% include 'forms/data.html.twig' %}"
         - save:
             fileprefix: feedback-

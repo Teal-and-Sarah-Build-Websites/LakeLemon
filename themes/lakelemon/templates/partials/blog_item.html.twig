@@ -6,7 +6,7 @@
     </h2>
     {{ page.summary }}
     {% if page.summary < page.content %}
-         <a class="uk-button uk-button-primary" href="{{ page.url }}">More information on {{page.title}}</a>
+         <a class="uk-button uk-button-default" href="{{ page.url }}">More information on {{page.title}}</a>
      {% endif %}
 {% else %}
 <div class="uk-grid article">
@@ -45,7 +45,7 @@
         </div>
        {{ page.summary }}
        {% if page.summary < page.content %}
-            <a class="uk-button uk-button-primary uk-button-small uk-align-center" href="{{ page.url }}">More information on {{page.title}}</a>
+            <a class="uk-button uk-button-default uk-button-small uk-align-center" href="{{ page.url }}">More information on {{page.title}}</a>
         {% endif %}
     </div>
 </div>
