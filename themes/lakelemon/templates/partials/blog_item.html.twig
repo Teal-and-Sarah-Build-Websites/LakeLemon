@@ -11,11 +11,11 @@
 {% else %}
 <div class="uk-grid article">
     <div class="uk-width-1-2 uk-visible@s">
-        <div class="uk-position-relative uk-visible-toggle" tabindex="-1" uk-slideshow>
+        <div class="uk-position-relative uk-visible-toggle" tabindex="-1" uk-slideshow="ratio: 4:3">
             <ul class="uk-slideshow-items uk-light">
             {% for image in page.media.images|slice(0,4) %}
                 <li>
-                  {{ image.html(page.header.image.title, page.header.image.alt) }}
+                    <img data-src="{{image.url}}" width="" height="" alt="page.header.image.alt" title="{{page.header.image.title}}" uk-img>
                 </li>
               {% endfor %}
               </ul>
@@ -30,17 +30,17 @@
         </h2>
         <hr class="uk-hidden@s">
         <div class="uk-hidden@s">
-            <div class="uk-position-relative uk-visible-toggle uk-dark" tabindex="-1" uk-slideshow>
+            <div class="uk-position-relative uk-visible-toggle uk-dark" tabindex="-1" uk-slideshow="ratio: 4:3">
                 <ul class="uk-slideshow-items">
                     {% for image in page.media.images|slice(0,4) %}
                         <li style="text-align:center;">
-                            {{ image.html(page.header.image.title, page.header.image.alt) }}
+                            <img data-src="{{image.url}}" width="" height="" alt="page.header.image.alt" title="{{page.header.image.title}}" uk-img>
                         </li>
                     {% endfor %}
                 </ul>
                 <a class="uk-position-center-left uk-position-small" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
                 <a class="uk-position-center-right uk-position-small" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
-
+                <ul class="uk-slideshow-nav uk-dotnav uk-flex-center uk-margin uk-dark"></ul>
             </div>
         </div>
        {{ page.summary }}
