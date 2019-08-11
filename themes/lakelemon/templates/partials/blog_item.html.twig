@@ -1,7 +1,6 @@
 <div class="uk-container uk-margin-top uk-margin-bottom">
     <div class="uk-grid article">
-        {# Displays on desktop #}
-        <div class="uk-width-1-2 uk-visible@s">
+        <div class="uk-width-1-1 uk-width-1-2@s">
             <div class="uk-position-relative uk-visible-toggle" tabindex="-1" uk-slideshow="ratio: 4:3">
                 <ul class="uk-slideshow-items uk-light">
                 {% for image in page.media.images|slice(0,4) %}
@@ -21,21 +20,6 @@
             </h2>
             {# Displays on mobile #}
             <hr class="uk-hidden@s">
-            {# Displays on mobile #}
-            <div class="uk-hidden@s">
-                <div class="uk-position-relative uk-visible-toggle" tabindex="-1" uk-slideshow="ratio: 4:3">
-                    <ul class="uk-slideshow-items">
-                        {% for image in page.media.images|slice(0,4) %}
-                            <li style="text-align:center;">
-                                <img data-src="{{image.url}}" width="" height="" alt="page.header.image.alt" title="{{page.header.image.title}}" uk-img>
-                            </li>
-                        {% endfor %}
-                    </ul>
-                    <a class="uk-position-center-left uk-position-small" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
-                    <a class="uk-position-center-right uk-position-small" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
-                    <ul class="uk-slideshow-nav uk-dotnav uk-flex-center uk-margin uk-dark"></ul>
-                </div>
-            </div>
            {{ page.summary }}
            {% if page.summary < page.content %}
                 <a class="uk-button uk-button-default uk-button-small uk-align-center" href="{{ page.url }}">More information on {{page.title}}</a>
