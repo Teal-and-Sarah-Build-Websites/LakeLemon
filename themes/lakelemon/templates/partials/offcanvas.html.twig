@@ -23,7 +23,6 @@
     <div class="uk-offcanvas-bar">
         <button class="uk-offcanvas-close" type="button" uk-close></button>
         <ul class="uk-nav uk-nav-default">
-            <li><a href="{{ base_url == '' ? '/' : base_url }}">Home</a></li>
             {% if theme_config.dropdown.enabled %}
                 {{ _self.loop(pages) }}
             {% else %}

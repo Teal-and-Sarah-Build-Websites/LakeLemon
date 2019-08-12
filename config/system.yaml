@@ -2,6 +2,7 @@ absolute_urls: false
 
 home:
   alias: '/home'
+  hide_in_urls: true
 
 pages:
   theme: lakelemon

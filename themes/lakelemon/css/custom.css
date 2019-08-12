@@ -9,7 +9,7 @@ h1, h2, h3, h4, h5, h6, #logo {
  font-style: italic;
 }
 
-body.colorful-body h2, body.colorful-body h3 {
+body.colorful-body h2, body.colorful-body h3, body.colorful-body h2 a {
     color: #FFC107;
 }
 
@@ -62,7 +62,7 @@ nav { padding: 0 40px;}
 
 .uk-offcanvas-bar ul a, button.uk-offcanvas-close {
     color: #333 !important;
-    font-size: large;
+    font-size: 16px;
 }
 
 @media (max-width: 413px)  {
@@ -131,6 +131,10 @@ footer {
     padding: 40px 0;
 }
 
+footer small {
+    display: block;
+}
+
 @media (max-width: 620px) {
     footer .uk-text-lead {
         font-size: 1rem;
@@ -153,4 +157,40 @@ footer {
 .description p, .description li {
     font-size: 18px;
     color: black;
+}
+
+.required {
+    color: #888;
+}
+
+.uk-slidenav {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.uk-slidenav:focus, .uk-slidenav:hover {
+    color: rgba(255, 255, 255);
+}
+
+.uk-slidenav svg {
+    width: 20px;
+    height: 34px;
+}
+
+.uk-slidenav polyline {
+    stroke-width: 3;
+}
+
+/* [1] The container */
+.img-hover-zoom {
+  overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+}
+
+/* [2] Transition property for smooth transformation of images */
+.img-hover-zoom img {
+  transition: transform .5s ease;
+}
+
+/* [3] Finally, transforming the image when container gets hovered */
+.img-hover-zoom:hover img {
+  transform: scale(1.05);
 }
