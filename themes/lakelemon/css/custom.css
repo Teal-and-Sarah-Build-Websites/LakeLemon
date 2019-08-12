@@ -9,7 +9,7 @@ h1, h2, h3, h4, h5, h6, #logo {
  font-style: italic;
 }
 
-body.colorful-body h2, body.colorful-body h3 {
+body.colorful-body h2, body.colorful-body h3, body.colorful-body h2 a {
     color: #FFC107;
 }
 
@@ -62,7 +62,7 @@ nav { padding: 0 40px;}
 
 .uk-offcanvas-bar ul a, button.uk-offcanvas-close {
     color: #333 !important;
-    font-size: large;
+    font-size: 16px;
 }
 
 @media (max-width: 413px)  {
@@ -161,6 +161,19 @@ footer small {
 
 .required {
     color: #888;
+}
+
+.uk-slidenav {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.uk-slidenav:focus, .uk-slidenav:hover {
+    color: rgba(255, 255, 255);
+}
+
+.uk-slidenav svg {
+    width: 20px;
+    height: 34px;
 }
 
 .uk-slidenav polyline {

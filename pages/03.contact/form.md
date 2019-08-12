@@ -1,9 +1,9 @@
 ---
 title: Contact
-body_classes: uk-container-xsmall uk-align-center
+body_classes: uk-container-xsmall uk-align-center uk-padding-large
 hero: true
 form:
-    name: contact-form
+    name: contact
     fields:
         - name: name
           label: Name
@@ -97,12 +97,5 @@ form:
             reply_to: “{{ form.value.email }}”
             subject: "[Web contact] {{ form.value.name|e }}"
             body: "{% include 'forms/data.html.twig' %}"
-        - save:
-            fileprefix: feedback-
-            dateformat: Ymd-His-u
-            extension: txt
-            body: "{% include 'forms/data.txt.twig' %}"
-        - message: Thank you for getting in touch!
         - display: thankyou
-
 ---
