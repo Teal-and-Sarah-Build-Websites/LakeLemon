@@ -2,6 +2,7 @@
 title: Contact
 body_classes: uk-container-xsmall uk-align-center uk-padding-large
 hero: true
+background: center
 form:
     name: contact
     fields:

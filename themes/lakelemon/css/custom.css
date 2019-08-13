@@ -129,6 +129,11 @@ iframe {
 
 footer {
     padding: 40px 0;
+    background-color: #607D8B;
+}
+
+footer .uk-text-lead {
+  color: white;
 }
 
 footer small {
