@@ -112,21 +112,6 @@ h1 {
     }
 }
 
-.iframe-container {
-    padding: 50px 20px 20px;
-    float: left;
-}
-
-@media (max-width: 450px) {
-    iframe {
-        padding: 0 0 20px 0;
-    }
-}
-
-iframe {
-    max-width: 100%;
-}
-
 .item-header {
     text-align: center;
 }
