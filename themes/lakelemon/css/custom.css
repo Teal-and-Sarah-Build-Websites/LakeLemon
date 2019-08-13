@@ -194,3 +194,7 @@ footer small {
 .img-hover-zoom:hover img {
   transform: scale(1.05);
 }
+
+.house-overview {
+  font-size: 1.2em;
+}
