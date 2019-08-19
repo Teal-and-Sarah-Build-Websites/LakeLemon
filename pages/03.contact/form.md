@@ -91,11 +91,6 @@ form:
 
     process:
         - email:
-            from: "{{ config.plugins.email.from }}"
-            to:
-              - "{{ config.plugins.email.to }}"
-              - "{{ form.value.email }}"
-            reply_to: “{{ form.value.email }}”
             subject: "[Web contact] {{ form.value.name|e }}"
             body: "{% include 'forms/data.html.twig' %}"
         - display: thankyou
